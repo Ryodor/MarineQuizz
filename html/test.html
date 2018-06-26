@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Une page web</title>
+</head>
+    <script language="javascript"> 
+
+        function affiche_text(id) { 
+            if (id == "1"){
+                var text = "<strong style='color: rgb(68, 68, 68);'><span style='font-size: 12px;'>A <span style='color: red;'>A</span> (<span style='color: red;'>A</span>)A A <span style='color: red;'>A</span> A</span></strong><br />  <br /><strong style='color: rgb(68, 68, 68);'><span style='font-size: 10px;'>X</span></strong>";
+            }
+            else{
+                var text = "B";
+            }
+            document.getElementById("2").innerHTML = text; 
+        } 
+        
+        </script> 
+        
+        </head> 
+        
+        
+        
+        <body> 
+        
+        <div id="1">
+            <img src="http://data.imagup.com/2/1105095357.gif" onclick="affiche_text('1');" height="15" width="25"> 
+            <img src="http://data.imagup.com/2/1105095400.gif" onclick="affiche_text('2');" height="15" width="25"> 
+        </div> 
+        
+        <div id="2">
+            <strong style="color: rgb(68, 68, 68);"><span style="font-size: 12px;">X <span style="color: red;">X</span> (<span style="color: red;">X</span>)X X 
+            <span style="color: red;">X</span> X</span></strong><br /><br /><strong style="color: rgb(68, 68, 68);"><span style="font-size: 10px;">X</span></strong>
+        </div> 
+</body>
+</html>
