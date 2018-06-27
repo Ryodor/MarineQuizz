@@ -1,36 +1,93 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>Une page web</title>
-</head>
-    <script language="javascript"> 
 
-        function affiche_text(id) { 
-            if (id == "1"){
-                var text = "<strong style='color: rgb(68, 68, 68);'><span style='font-size: 12px;'>A <span style='color: red;'>A</span> (<span style='color: red;'>A</span>)A A <span style='color: red;'>A</span> A</span></strong><br />  <br /><strong style='color: rgb(68, 68, 68);'><span style='font-size: 10px;'>X</span></strong>";
-            }
-            else{
-                var text = "B";
-            }
-            document.getElementById("2").innerHTML = text; 
-        } 
-        
-        </script> 
-        
-        </head> 
-        
-        
-        
-        <body> 
-        
-        <div id="1">
-            <img src="http://data.imagup.com/2/1105095357.gif" onclick="affiche_text('1');" height="15" width="25"> 
-            <img src="http://data.imagup.com/2/1105095400.gif" onclick="affiche_text('2');" height="15" width="25"> 
-        </div> 
-        
-        <div id="2">
-            <strong style="color: rgb(68, 68, 68);"><span style="font-size: 12px;">X <span style="color: red;">X</span> (<span style="color: red;">X</span>)X X 
-            <span style="color: red;">X</span> X</span></strong><br /><br /><strong style="color: rgb(68, 68, 68);"><span style="font-size: 10px;">X</span></strong>
-        </div> 
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title></title>
+</head>
+
+<body>
+    <h1>Connaît tu la Coding Factory ?</h1>
+    <br/>
+    <div id="question" class="q2">
+        <p class="text">Qui est la meilleur coordinatrice pédagogique?</p>
+        <table>
+            <form action="">
+                <tr>
+
+                    <th>
+                        <img src="../image/marine_le_pen.jpg" alt="André De Soussa">
+                    </th>
+                    <th>
+                        <img src="../image/marine_leleu.jpg" alt="Julien Pavon">
+                    </th>
+                    <th>
+                        <img src="../image/marine_lorphelin.jpg" alt="Guillaume Warckol">
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <input type="radio" id="contactChoice1" name="contact" value="André De Sousa">
+                        <label for="contactChoice1">Marine Le Pen</label>
+                    </th>
+
+                    <th>
+                        <input type="radio" id="contactChoice2" name="contact" value="Julien Pavon">
+                        <label for="contactChoice2">Marine Leleu</label>
+                    </th>
+
+                    <th>
+                        <input type="radio" id="contactChoice3" name="contact" value="Guillaume Warckol">
+                        <label for="contactChoice3">Marine Lorphelin</label>
+                    </th>
+                </tr>
+                <tr>
+
+                    <th>
+                        <img src="../image/marine_nationale.jpg" alt="André De Soussa">
+                    </th>
+                    <th>
+                        <img src="../image/marine_huertas.jpg" alt="Julien Pavon">
+                    </th>
+                    <th>
+                        <img src="../image/marine_bleu.jpg" alt="Guillaume Warckol">
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <input type="radio" id="contactChoice1" name="contact" value="André De Sousa">
+                        <label for="contactChoice1">Marine National</label>
+                    </th>
+
+                    <th>
+                        <input type="radio" id="contactChoice2" name="contact" value="Julien Pavon">
+                        <label for="contactChoice2">Marine Huertas</label>
+                    </th>
+
+                    <th>
+                        <input type="radio" id="contactChoice3" name="contact" value="Guillaume Warckol">
+                        <label for="contactChoice3">Bleu Marine</label>
+                    </th>
+                </tr>
+                <tr>
+                    <th></th>
+                    <th>
+                        <button id="nextbutton" onclick="question4()">Next</button>
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <p>
+                            <b> HELP : </b> Ce n'est probablement pas le bleu marine, Marine</p>
+                    </th>
+                </tr>
+
+            </form>
+        </table>
+    </div>
+
 </body>
+<script type="text/javascript" src="../js/quizz.js"></script>
+
 </html>

@@ -1,18 +1,56 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="../css/style.css" />
-	<title></title>
+    <title></title>
 </head>
+
 <body>
-    <h1>Connaît tu la Coding Factory ?</h1><br/>
+    <h1>Connaît tu la Coding Factory ?</h1>
+    <br/>
     <div id="question" class="q1">
         <p class="text">Qui est le PO le plus sexy ...?</p>
-        <img src="../image/andré_de_sousa.jpeg" alt="André De Soussa">
-        <img src="../image/julien_pavon.jpg" alt="Julien Pavon">
-        <img src="../image/guillaume_warckol.jpeg" alt="Guillaume Warckol">
-        <button onclick="question2()">Next</button>
+        <table>
+            <form action="">
+                <tr>
+
+                    <th>
+                        <img src="../image/andré_de_sousa.jpeg" alt="André De Soussa">
+                    </th>
+                    <th>
+                        <img src="../image/julien_pavon.jpg" alt="Julien Pavon">
+                    </th>
+                    <th>
+                        <img src="../image/guillaume_warckol.jpeg" alt="Guillaume Warckol">
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <input type="radio" id="contactChoice1" name="contact" value="André De Sousa">
+                        <label for="contactChoice1">André De Sousa</label>
+                    </th>
+
+                    <th>
+                        <input type="radio" id="contactChoice2" name="contact" value="Julien Pavon">
+                        <label for="contactChoice2">Julien Pavon</label>
+                    </th>
+
+                    <th>
+                        <input type="radio" id="contactChoice3" name="contact" value="Guillaume Warckol">
+                        <label for="contactChoice3">Guillaume Warckol</label>
+                    </th>
+                </tr>
+                <tr>
+                    <th></th>
+                    <th>
+                        <button id="nextbutton" onclick="question2()">Next</button>
+                    </th>
+                </tr>
+
+            </form>
+        </table>
     </div>
 
 </body>
