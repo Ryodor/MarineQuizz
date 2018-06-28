@@ -13,7 +13,7 @@ function question2() {
                         <img src="../image/kiki.jpg" alt="Julien Pavon">
                     </th>
                     <th>
-                        <img src="../image/isa_tmp.jpg" alt="Guillaume Warckol">
+                    <img src="../image/isa.jpg" alt="Guillaume Warckol">
                     </th>
                 </tr>
                 <tr>
@@ -52,38 +52,10 @@ function question2() {
 
   function question3() {
     document.getElementById("question").innerHTML = `
-    <div id="question" class="q2">
+    <div id="question" class="q3">
         <p class="text">Qui est la meilleur coordinatrice pédagogique?</p>
         <table>
             <form action="">
-                <tr>
-
-                    <th>
-                        <img src="../image/marine_le_pen.jpg" alt="André De Soussa">
-                    </th>
-                    <th>
-                        <img src="../image/marine_leleu.jpg" alt="Julien Pavon">
-                    </th>
-                    <th>
-                        <img src="../image/marine_lorphelin.jpg" alt="Guillaume Warckol">
-                    </th>
-                </tr>
-                <tr>
-                    <th>
-                        <input type="radio" id="contactChoice1" name="contact" value="André De Sousa">
-                        <label for="contactChoice1">Marine Le Pen</label>
-                    </th>
-
-                    <th>
-                        <input type="radio" id="contactChoice2" name="contact" value="Julien Pavon">
-                        <label for="contactChoice2">Marine Leleu</label>
-                    </th>
-
-                    <th>
-                        <input type="radio" id="contactChoice3" name="contact" value="Guillaume Warckol">
-                        <label for="contactChoice3">Marine Lorphelin</label>
-                    </th>
-                </tr>
                 <tr>
 
                     <th>
@@ -93,7 +65,7 @@ function question2() {
                         <img src="../image/marine_huertas.jpg" alt="Julien Pavon">
                     </th>
                     <th>
-                        <img src="../image/marine_bleu.jpg" alt="Guillaume Warckol">
+                        <img src="../image/marinelepencarré.jpeg" alt="André De Soussa">
                     </th>
                 </tr>
                 <tr>
@@ -108,8 +80,8 @@ function question2() {
                     </th>
 
                     <th>
-                        <input type="radio" id="contactChoice3" name="contact" value="Guillaume Warckol">
-                        <label for="contactChoice3">Bleu Marine</label>
+                        <input type="radio" id="contactChoice1" name="contact" value="André De Sousa">
+                        <label for="contactChoice1">Marine Le Pen</label>
                     </th>
                 </tr>
                 <tr>
@@ -133,5 +105,214 @@ function question2() {
 
   function question4() {
     document.getElementById("question").innerHTML = `
+    <div id="question" class="q4">
+        <p class="text">Qui était le PO de NoSql ?</p>
+        <table>
+            <form action="">
+                <tr>
+
+                    <th>
+                        <img src="../image/lauris_braka.jpeg" alt="André De Soussa">
+                    </th>
+                    <th>
+                        <img src="../image/Damien_r.jpeg" alt="Julien Pavon">
+                    </th>
+                    <th>
+                        <img src="../image/sylvain_delafoy.jpeg" alt="Guillaume Warckol">
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <input type="radio" id="contactChoice1" name="contact" value="André De Sousa">
+                        <label for="contactChoice1">Lauris Braka</label>
+                    </th>
+
+                    <th>
+                        <input type="radio" id="contactChoice2" name="contact" value="Julien Pavon">
+                        <label for="contactChoice2">Damien Russier</label>
+                    </th>
+
+                    <th>
+                        <input type="radio" id="contactChoice3" name="contact" value="Guillaume Warckol">
+                        <label for="contactChoice3">Sylvain Delafoy</label>
+                    </th>
+                </tr>
+                <tr>
+                    <th></th>
+                    <th>
+                        <button id="nextbutton" onclick="question5()">Next</button>
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <p>
+                            <b> HELP : </b> C'est probablement l'un des trois...</p>
+                    </th>
+                </tr>
+                
+            </form>
+        </table>
+    </div>
+    `;
+  }
+
+  function question5() {
+    document.getElementById("question").innerHTML = `
+  <div id="question" class="q1">
+  <p class="text">Où sont les cables HDMI ?</p>
+  <table>
+      <form action="">
+          <tr>
+
+              <th>
+                  <img src="../image/tiroir_coding.jpg" alt="André De Soussa">
+              </th>
+              <th>
+                  <img src="../image/tv_magouille.jpg" alt="Julien Pavon">
+              </th>
+              <th>
+                  <img src="../image/erreur-404-0.jpg" alt="Guillaume Warckol">
+              </th>
+          </tr>
+          <tr>
+              <th>
+                  <input type="radio" id="contactChoice1" name="contact" value="André De Sousa">
+                  <label for="contactChoice1">Bien rangé dans les tiroirs à leurs place ?</label>
+              </th>
+
+              <th>
+                  <input type="radio" id="contactChoice2" name="contact" value="Julien Pavon">
+                  <label for="contactChoice2">Vous pouvez répéter la question.</label>
+              </th>
+
+              <th>
+                  <input type="radio" id="contactChoice3" name="contact" value="Guillaume Warckol">
+                  <label for="contactChoice3">Ont les cherches encore...</label>
+              </th>
+          </tr>
+          <tr>
+              <th></th>
+              <th>
+                  <button id="nextbutton" onclick="question6()">Next</button>
+              </th>
+          </tr>
+          <tr>
+                    <th>
+                        <p>
+                            <b> HELP : </b> Sérieusement faut en racheter là...</p>
+                    </th>
+                </tr>
+
+      </form>
+  </table>
+</div>
+`;
+  }
+
+  function question6() {
+    document.getElementById("question").innerHTML = `
+    <div id="question" class="q6">
+    <p class="text">Et le babyfoot ???</p>
+    <table>
+        <form action="">
+            <tr>
+
+                <th>
+                    <img src="../image/troll_babyfoot.png" alt="André De Soussa">
+                </th>
+                <th>
+                    <img src="../image/renoi_babyfoot.jpg" alt="Julien Pavon">
+                </th>
+                <th>
+                    <img src="../image/babyfoot_aveugle.jpg" alt="Guillaume Warckol">
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    <input type="radio" id="contactChoice1" name="contact" value="André De Sousa">
+                    <label for="contactChoice1">Quel babyfoot? </label>
+                </th>
+
+                <th>
+                    <input type="radio" id="contactChoice2" name="contact" value="Julien Pavon">
+                    <label for="contactChoice2">Il est en route</label>
+                </th>
+
+                <th>
+                    <input type="radio" id="contactChoice3" name="contact" value="Guillaume Warckol">
+                    <label for="contactChoice3">Je ne vois pas de quoi vous parlez ?</label>
+                </th>
+            </tr>
+            <tr>
+                <th></th>
+                <th>
+                    <button id="nextbutton" onclick="question7()">Next</button>
+                </th>
+            </tr>
+            <tr>
+                    <th>
+                        <p>
+                            <b> HELP : </b> Soit franc envers toi-même...</p>
+                    </th>
+                </tr>
+
+        </form>
+    </table>
+</div>
+
+    `;
+  }
+
+  function question7() {
+    document.getElementById("question").innerHTML = `
+    <div id="question" class="q7">
+        <p class="text">Qu'a tu préféré cette année ?</p>
+        <table>
+            <form action="">
+                <tr>
+
+                    <th>
+                        <img src="../image/coding_hero.png" alt="André De Soussa">
+                    </th>
+                    <th>
+                        <img src="../image/coding_bureau.jpg" alt="Julien Pavon">
+                    </th>
+                    <th>
+                        <img src="../image/autre_chos.jpg" alt="Guillaume Warckol">
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <input type="radio" id="contactChoice1" name="contact" value="André De Sousa">
+                        <label for="contactChoice1">Les élèves, ont est tous adorables... </label>
+                    </th>
+
+                    <th>
+                        <input type="radio" id="contactChoice2" name="contact" value="Julien Pavon">
+                        <label for="contactChoice2">Les magnifiques locaux qui donnent envie de venir</label>
+                    </th>
+
+                    <th>
+                        <input type="radio" id="contactChoice3" name="contact" value="Guillaume Warckol">
+                        <label for="contactChoice3">Autre chose que tu souhaite nous partager ? </label>
+                    </th>
+                </tr>
+                <tr>
+                    <th></th>
+                    <th>
+                        <button id="nextbutton" onclick="question7()">Fin...</button>
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <p>
+                            <b> HELP : </b> Ta pas besoin d'aide pour celle la</p>
+                    </th>
+                </tr>
+
+            </form>
+        </table>
+    </div>
+
     `;
   }
