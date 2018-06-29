@@ -300,7 +300,7 @@ function question2() {
                 <tr>
                     <th></th>
                     <th>
-                        <button id="nextbutton" onclick="question7()">Fin...</button>
+                        <button id="nextbutton" onclick="End()">Fin...</button>
                     </th>
                 </tr>
                 <tr>
@@ -316,3 +316,52 @@ function question2() {
 
     `;
   }
+
+  function surprise() {
+    document.getElementById("surprise").innerHTML = `
+    <div id="question" class="q7">
+    <p class="text">La surprise !!!</p>
+    <audio id="audioPlayer">
+        <source src="hype_home.ogg">
+        <source src="../music/Karaoké_Hugues_Aufray_Adieu_monsieur_le_professeur.mp3">
+    </audio>
+    
+    <button class="control" onclick="play('audioPlayer', this)">Play</button>
+    <button class="control" onclick="resume('audioPlayer')">Stop</button>
+<script type="text/javascript" src="../js/quizz.js"></script>
+</div>
+
+    `;
+}
+
+function End() {
+    document.getElementById("question").innerHTML = `
+    <div id="question" class="q7">
+    <p class="text">Voici ta surprise, clic pour la découvrir !!!</p>
+    <button id="nextbutton" onclick="surprise()">Cadeau</button>
+    <div id="surprise">
+
+
+    </div>
+
+</div>
+    `;
+  }
+function play(idPlayer, control) {
+    var player = document.querySelector('#' + idPlayer);
+	
+    if (player.paused) {
+        player.play();
+        control.textContent = 'Pause';
+    } else {
+        player.pause();	
+        control.textContent = 'Play';
+    }
+}
+
+function resume(idPlayer) {
+    var player = document.querySelector('#' + idPlayer);
+	
+    player.currentTime = 0;
+    player.pause();
+}
