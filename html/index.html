@@ -4,61 +4,66 @@
 <head>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="../css/style.css" />
-    <title></title>
+    <link href="https://fonts.googleapis.com/css?family=Gugi|Inconsolata:400,700|Josefin+Sans:400,700|Jua|Noto+Sans:400,700|Roboto+Mono"
+        rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <title>Marine Quizz !</title>
 </head>
 
 <body>
-    <h1>Connaît tu VRAIMENT la Coding Factory ?</h1>
+    <header id="header">
+        <h1>Connais-tu VRAIMENT la Coding Factory ?</h1>
+    </header>
     <br/>
-    <div id="question" class="q1">
-        <p class="text">Qui est le PO le plus sexy ...?</p>
-        <table>
-            <form action="">
-                <tr>
+    <div id="question">
+        <div class="formSection q1">
+            <p class="text boldP">Qui est le PO le plus sexy ...?</p>
+            <table>
+                <form action="">
+                    <tr>
 
-                    <th>
-                        <img src="../image/andré_de_sousa.jpeg" alt="André De Soussa">
-                    </th>
-                    <th>
-                        <img src="../image/julien_pavon.jpg" alt="Julien Pavon">
-                    </th>
-                    <th>
-                        <img src="../image/guillaume_warckol.jpeg" alt="Guillaume Warckol">
-                    </th>
-                </tr>
-                <tr>
-                    <th>
-                        <input type="radio" id="contactChoice1" name="contact" value="André De Sousa">
-                        <label for="contactChoice1">André De Sousa</label>
-                    </th>
+                        <th>
+                            <img id="img1" class="choice" src="../image/andré_de_sousa.jpeg" alt="André De Soussa">
+                        </th>
+                        <th>
+                            <img id="img2" class="choice" src="../image/julien_pavon.jpg" alt="Julien Pavon">
+                        </th>
+                        <th>
+                            <img id="img3" class="choice" src="../image/guillaume_warckol.jpeg" alt="Guillaume Warckol">
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>
+                            <label for="contactChoice1" className="boldP">André De Sousa</label>
+                        </th>
 
-                    <th>
-                        <input type="radio" id="contactChoice2" name="contact" value="Julien Pavon">
-                        <label for="contactChoice2">Julien Pavon</label>
-                    </th>
+                        <th>
+                            <label for="contactChoice2" className="boldP">Julien Pavon</label>
+                        </th>
 
-                    <th>
-                        <input type="radio" id="contactChoice3" name="contact" value="Guillaume Warckol">
-                        <label for="contactChoice3">Guillaume Warckol</label>
-                    </th>
-                </tr>
-                <tr>
-                    <th></th>
-                    <th>
-                        <button id="nextbutton" onclick="question2()">Next</button>
-                    </th>
-                </tr>
-                <tr>
+                        <th>
+                            <label for="contactChoice3" className="boldP">Guillaume Warckol</label>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th></th>
+                        <th>
+                            <div id="nextbutton" class="button" onclick="question2()">Next</button>
+                        </th>
+                    </tr>
+                    <tr>
                         <th>
                             <p>
-                                <b> HELP : </b> ont ne le repeteras pas ;)</p>
+                                <b> HELP : </b> On ne le répétera pas ;)</p>
                         </th>
                     </tr>
 
-            </form>
-        </table>
-    </div>
+                </form>
+            </table>
+            </div>
+        </div>
 
 </body>
 <script type="text/javascript" src="../js/quizz.js"></script>
+
 </html>
